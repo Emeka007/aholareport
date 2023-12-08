@@ -10,6 +10,7 @@ import PersonAddIcon from "@mui/icons-material/PersonAdd";
 import TrafficIcon from "@mui/icons-material/Traffic";
 import Header from "../../components/Header";
 import LineChart from "../../components/LineChart";
+import BookOnlineOutlinedIcon from '@mui/icons-material/BookOnlineOutlined';
 import GeographyChart from "../../components/GeographyChart";
 import BarChart from "../../components/BarChart";
 import { DataGrid } from "@mui/x-data-grid";
@@ -60,11 +61,11 @@ const Dashboard = () => {
         >
           <StatBox
             title="12,361"
-            subtitle="Emails Sent"
+            subtitle="Total Bookings"
             progress="0.75"
             increase="+14%"
             icon={
-              <EmailIcon
+              <BookOnlineOutlinedIcon
                 sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
               />
             }

@@ -8,8 +8,10 @@ import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
 import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
 import ReceiptOutlinedIcon from "@mui/icons-material/ReceiptOutlined";
+import LocalShippingOutlinedIcon from "@mui/icons-material/LocalShippingOutlined";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import CalendarTodayOutlinedIcon from "@mui/icons-material/CalendarTodayOutlined";
+import GradeOutlinedIcon from '@mui/icons-material/GradeOutlined';
 import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
 import BarChartOutlinedIcon from "@mui/icons-material/BarChartOutlined";
 import PieChartOutlineOutlinedIcon from "@mui/icons-material/PieChartOutlineOutlined";
@@ -17,6 +19,7 @@ import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
+import AssessmentOutlinedIcon from '@mui/icons-material/AssessmentOutlined';
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();
@@ -144,7 +147,7 @@ const Sidebar = () => {
             <Item
               title="Trip Details"
               to="/bookingd"
-              icon={<ContactsOutlinedIcon />}
+              icon={<LocalShippingOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
@@ -173,43 +176,42 @@ const Sidebar = () => {
             />
             <Item
               title="Feedback and Ratings"
-              to="/calendar"
-              icon={<CalendarTodayOutlinedIcon />}
+              to="/ratings"
+              icon={<GradeOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Performance Metrics"
               to="/calendar"
-              icon={<CalendarTodayOutlinedIcon />}
+              icon={<TimelineOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
-              title="Trip Details"
-              to="/faq"
-              icon={<HelpOutlineOutlinedIcon />}
+              title="Trips"
+              to="/bookingt"
+              icon={<LocalShippingOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
-
+             
              <Item
               title="Complaint area"
-              to="/faq"
+              to="/area"
               icon={<HelpOutlineOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
-
-
             <Item
-              title="Delivery fee and commission"
-              to="/faq"
-              icon={<HelpOutlineOutlinedIcon />}
+              title="Reporting"
+              to="/reporting"
+              icon={<AssessmentOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
-  
+
+           
 
             <Typography
               variant="h6"

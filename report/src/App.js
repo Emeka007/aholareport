@@ -6,10 +6,14 @@ import Dashboard from "./scenes/dashboard";
 import BookingH from "./scenes/bookingh";
 import Invoices from "./scenes/invoices";
 import BookingD from "./scenes/bookingd";
+import BookingT from "./scenes/bookingt";
+import Ratings from "./scenes/Ratings";
+import Reporting from "./scenes/Reporting";
 import Performance_Metric from "./scenes/performance_metric";
 import Bar from "./scenes/bar";
 import Form from "./scenes/form";
 import Line from "./scenes/line";
+import Area from "./scenes/area";
 import Pie from "./scenes/pie";
 import FAQ from "./scenes/faq";
 import Geography from "./scenes/geography";
@@ -17,6 +21,8 @@ import Settings from "./scenes/settings";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { ColorModeContext, useMode } from "./theme";
 import Calendar from "./scenes/calendar/calendar";
+
+
 import SignInAndSingUp from "./scenes/login/SignInAndSingUp";
 // import Login from "./scenes/login/Login"
 
@@ -45,9 +51,13 @@ function App() {
               <Route path="/" element={<Dashboard />} />
               <Route path="/bookingh" element={<BookingH />} />
               <Route path="/bookingd" element={<BookingD />} />
+              <Route path="/bookingt" element={<BookingT />} />
               <Route path="/invoices" element={<Invoices />} />
               <Route path="/form" element={<Form />} />
               <Route path="/bar" element={<Bar />} />
+              <Route path="/area" element={<Area />} />
+              <Route path="/ratings" element={<Ratings />} />
+              <Route path="/reporting" element={<Reporting />} />
               <Route path="/pie" element={<Pie />} />
               <Route path="/line" element={<Line />} />
               <Route path="/faq" element={<FAQ />} />

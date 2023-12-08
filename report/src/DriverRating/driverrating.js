@@ -14,7 +14,7 @@ const DriverRatingPage = () => {
 
   return (
     <Box m="20px">
-      <Header title="Driver Ratings" subtitle="See how drivers are rated" />
+      <Header title="Driver Ratings" subtitle="View customer feedback and ratings for improvement" />
 
       <Box display="flex" justifyContent="space-between">
         {/* DRIVER RATING LIST */}
